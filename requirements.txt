@@ -1,0 +1,9 @@
+streamlit
+openai
+librosa
+soundfile
+langchain
+pytube3
+ffmpeg-python
+chromadb
+tiktoken
