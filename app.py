@@ -126,7 +126,7 @@ def main():
 
     youtube_url = st.text_input(
         label="Youtube URL을 입력해주세요.",
-        value="https://www.youtube.com/watch?v=reUZRyXxUs4&t=85s",
+        value="https://www.youtube.com/watch?v=s8EKVNcD1ko",
     )
 
     if youtube_url:
