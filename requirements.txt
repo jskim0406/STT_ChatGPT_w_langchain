@@ -1,4 +1,5 @@
 streamlit
+databutton
 openai
 librosa
 soundfile
@@ -7,3 +8,4 @@ pytube3
 ffmpeg-python
 chromadb
 tiktoken
+setuptools
