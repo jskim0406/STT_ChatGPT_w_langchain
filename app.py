@@ -110,11 +110,8 @@ def main():
 
         st.markdown(
             """
-            **Blog post:** \n
-            [*Blog title*](URL)
-
-            **Code:** \n
-            [*Github*](https://github.com/jskim0406/SimpleRec_w_langchain.git)
+            **Code:** 
+            [*Github Repo*](https://github.com/jskim0406/STT_ChatGPT_w_langchain)
             """
         )
 
@@ -336,10 +333,14 @@ def main():
                     llm = OpenAI(
                         temperature=temperature,
                         model_name=model_name,
-                        openai_api_key=api_key
+                        openai_api_key=api_key,
+                        verbose=True
                     )
                 qa = RetrievalQA.from_chain_type(
-                    llm=llm, chain_type=chain, retriever=docsearch.as_retriever()
+                    llm=llm, 
+                    chain_type=chain, 
+                    retriever=docsearch.as_retriever(),
+                    verbose=True
                 )
                 st.success(f"Question Answering is ready.")
 
